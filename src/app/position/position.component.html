@@ -1,0 +1,9 @@
+<div *ngFor="let animal of animals">
+  <div [style.left]="animal.position.x + 'px'" [style.top]="animal.position.y + 'px'" style="position: absolute;">
+    <span>{{ animal?.name }}</span>
+  </div>
+</div>
+<div style="width: 100%; text-align: center;">
+  <button (click)="clickX()">X</button>
+  <button>Y</button>
+</div>

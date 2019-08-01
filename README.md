@@ -1,5 +1,5 @@
 # CobyApp
-
+This is Coby's first coding application in Angular.  You can even play game on this app!
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 7.3.6.
 
 ## Development server

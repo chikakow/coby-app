@@ -1,0 +1,7 @@
+<div style="text-align:center">
+  <h1 [style.color]="animal.color">
+    I'm a {{ typeAnimal }} I can do {{ trick }}!
+  </h1>
+  <input [(ngModel)]="inputText">
+  <button (click)="btnClick()" (keydown.enter)="btnClick()">Do Trick</button>
+  <router-outlet></router-outlet>
