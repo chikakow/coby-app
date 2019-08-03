@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { Cat, Animal } from '../models/animal';
+import { Cat, Animal, Habitat } from '../models/animal';
 import { AnimalFactoryService } from '../services/animal-factory.service';
 
 @Component({
@@ -10,18 +10,35 @@ import { AnimalFactoryService } from '../services/animal-factory.service';
 export class PositionComponent implements OnInit {
 
   animals: Animal[];
-  
+  interval = null;
+
   constructor(private factory: AnimalFactoryService) { }
 
   ngOnInit() {
     this.animals = this.factory.getAnimalArray();
   }
 
-  clickX() {
+  clickStart() {
 
-    this.animals.forEach(animal => {
+    if (this.interval) {
+      clearInterval(this.interval);
+      this.interval = null;
+    }
+    else {
+      this.interval = setInterval(() => {
 
-      animal.position.x = animal.position.x + Math.random() * 10;
-    })
+        this.animals.forEach(animal => {
+
+          animal.position.x = animal.position.x + Math.random() * 10;
+        })
+
+      }, 200);
+    }
+
+
+  }
+
+  get habitat() {
+    return Habitat;
   }
 }

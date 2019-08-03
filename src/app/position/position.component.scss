@@ -1,0 +1,37 @@
+.ocean {
+    background-image: url('../../assets/images/ocean.jpg'); background-repeat: repeat;
+}
+
+.grass {
+    background-image: url('../../assets/images/grass.jpg'); background-repeat: repeat;
+}
+
+.icon, .name {
+    display: block;
+}
+
+.name {
+    background-color: white;
+    padding: 3px;
+    border-radius: 5px;
+    font-weight: 600;
+    color: #007ea7;
+}
+
+.icon-25 {
+    font-size: 25px;
+}
+
+.icon-35 {
+    font-size: 35px;
+}
+
+.icon-40 {
+    font-size: 40px;
+}
+
+.icon-45 {
+    font-size: 45px;
+}
+
+
