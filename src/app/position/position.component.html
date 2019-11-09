@@ -1,4 +1,4 @@
-<div *ngFor="let animal of animals"  [style.top]="animal.position.y + 'px'" style="width: 100%; height: 100px;" 
+<div *ngFor="let animal of animals"  [style.top]="animal.position.y + 'px'" style="width: 100%; height: 100px; position: absolute;" 
 [ngClass]="{'ocean': animal.habitat === habitat.Ocean, 'grass': animal.habitat === habitat.Land}">
   <div [style.left]="animal.position.x + 'px'" style="position: absolute; text-align: center">
     <span class="icon-{{animal.iconSize}}">{{ animal?.icon }}</span>

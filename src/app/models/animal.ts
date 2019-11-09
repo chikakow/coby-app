@@ -28,7 +28,7 @@ export class Cat extends Animal {
     icon = '🐈';
     position = {
         x: 0,
-        y: 100
+        y: 400
     };
     color = 'orange';
     name = 'Cat';
@@ -49,15 +49,18 @@ export class Whale extends OceanAnimal {
     iconSize = "45";
     color = 'navy';
     icon='🐋';
-
     name = 'Whale';
+    position = {
+        x: 0,
+        y: 200
+    };
 }
 export class Puppy extends Animal {
     iconSize = "25";
     icon='🐶';
     position = {
         x: 0,
-        y: 150
+        y: 300
     };
     color = 'red';
     name = 'Bloom'; 
@@ -67,11 +70,11 @@ export class Puppy extends Animal {
 }
 
 export class Anaconda extends Animal {
-    iconSize = "25";
+    iconSize = "40";
     icon='🐍';
     position = {
         x: 0,
-        y: 150
+        y: 100
     };
     color = 'dark green';
     name = 'Anna'; 
@@ -86,7 +89,7 @@ export class Megladon extends OceanAnimal {
     icon='🦈';
     position = {
         x: 0,
-        y: 50
+        y: 0
     }
     color = 'gray';
     name = 'Meg';
