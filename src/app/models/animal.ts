@@ -66,6 +66,20 @@ export class Puppy extends Animal {
     }
 }
 
+export class Anaconda extends Animal {
+    iconSize = "25";
+    icon='🐍';
+    position = {
+        x: 0,
+        y: 150
+    };
+    color = 'dark green';
+    name = 'Anna'; 
+    doTrick() { 
+        return 'slither';
+    }
+}
+
 
 export class Megladon extends OceanAnimal {
     iconSize = "45";
